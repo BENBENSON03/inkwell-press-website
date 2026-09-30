@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>
+      Inkwell Press | Professional Printing Company
+    </title>
+    <meta content="Business cards, flyers, invitations, packaging and large-format printing with fast turnaround and proof approval." name="description">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <!-- NAVIGATION -->
+    <header class="nav">
+      <div class="wrap nav-in">
+        <a aria-label="Inkwell Press home" class="brand" href="#home">
+          <span aria-hidden="true" class="dots">
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+          </span>
+          Inkwell Press
+        </a>
+        <button aria-controls="menu" aria-expanded="false" aria-label="Toggle menu" class="burger">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+        </button>
+        <nav aria-label="Main" class="menu" id="menu">
+          <a href="#home">
+            Home
+          </a>
+          <a href="#services">
+            Services
+          </a>
+          <a href="#products">
+            Products
+          </a>
+          <a href="#portfolio">
+            Portfolio
+          </a>
+          <a href="#quote">
+            Pricing/Quote
+          </a>
+          <a href="#about">
+            About
+          </a>
+          <a href="#contact">
+            Contact
+          </a>
+          <a class="btn btn-primary" href="#quote">
+            Get a Quote
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="wrap hero-in">
+          <div class="hero-copy">
+            <h1>
+              Bringing Your Ideas to Print.
+            </h1>
+            <p>
+              Sharp colour, honest paper and a proof you approve before we press start. Print for people, businesses, schools and events, delivered fast.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#quote">
+                Get a Free Quote
+              </a>
+              <a class="btn btn-ghost" href="#services">
+                Explore Our Services
+              </a>
+            </div>
+          </div>
+          <div aria-hidden="true" class="hero-art">
+            <div class="sheet s1">
+            </div>
+            <div class="sheet s2">
+            </div>
+            <div class="sheet s3">
+              <b>
+                Ink
+              </b>
+              <small>
+                well press
+              </small>
+              <span class="reg">
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="wrap">
+          <h2>
+            Everything you need printed
+          </h2>
+          <p class="lead">
+            Ten services, one team, one proof-and-approve process.
+          </p>
+          <div class="grid g5 reveal" id="serviceGrid">
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCTS -->
+      <section class="section alt" id="products">
+        <div class="wrap">
+          <h2>
+            Popular products
+          </h2>
+          <div aria-label="Filter products" class="filters" data-target="productGrid" role="group">
+            <button class="chip active" data-f="all">
+              All
+            </button>
+            <button class="chip" data-f="Business">
+              Business
+            </button>
+            <button class="chip" data-f="Marketing">
+              Marketing
+            </button>
+            <button class="chip" data-f="Events">
+              Events
+            </button>
+            <button class="chip" data-f="Packaging">
+              Packaging
+            </button>
+            <button class="chip" data-f="Custom">
+              Custom
+            </button>
+          </div>
+          <div class="grid g4" id="productGrid">
+          </div>
+        </div>
+      </section>
+      <!-- QUOTE -->
+      <section class="section" id="quote">
+        <div class="wrap quote-wrap">
+          <div>
+            <h2>
+              Build your quote
+            </h2>
+            <p class="lead">
+              Choose your options and see an estimate as you go. We confirm the final price with your proof.
+            </p>
+            <div aria-live="polite" class="estimate">
+              <small>
+                Estimated total
+              </small>
+              <strong id="estTotal">
+                ₦0
+              </strong>
+              <span id="estUnit">
+              </span>
+            </div>
+          </div>
+          <form class="card form" id="quoteForm" novalidate="">
+            <label>
+              Printing type
+              <select id="qType" required="">
+              </select>
+            </label>
+            <div class="two">
+              <label>
+                Quantity
+                <input id="qQty" min="10" required="" step="10" type="number" value="100">
+              </label>
+              <label>
+                Size
+                <select id="qSize">
+                  <option value="1">
+                    Standard
+                  </option>
+                  <option value="1.6">
+                    Large (A4)
+                  </option>
+                  <option value="2.6">
+                    Extra large (A3)
+                  </option>
+                </select>
+              </label>
+            </div>
+            <div class="two">
+              <label>
+                Paper / material
+                <select id="qPaper">
+                  <option value="1">
+                    Matte 300gsm
+                  </option>
+                  <option value="1.2">
+                    Gloss 350gsm
+                  </option>
+                  <option value="1.5">
+                    Recycled kraft
+                  </option>
+                  <option value="1.9">
+                    Vinyl
+                  </option>
+                </select>
+              </label>
+              <label>
+                Colour
+                <select id="qColor">
+                  <option value="1">
+                    Full colour
+                  </option>
+                  <option value="0.7">
+                    Black & white
+                  </option>
+                </select>
+              </label>
+            </div>
+            <div class="two">
+              <label>
+                Finishing
+                <select id="qFinish">
+                  <option value="0">
+                    None
+                  </option>
+                  <option value="0.15">
+                    Lamination
+                  </option>
+                  <option value="0.25">
+                    Spot UV
+                  </option>
+                  <option value="0.3">
+                    Foil stamping
+                  </option>
+                </select>
+              </label>
+              <label>
+                Delivery
+                <select id="qDeliv">
+                  <option value="0">
+                    Pickup (free)
+                  </option>
+                  <option value="3500">
+                    Standard (3-5 days)
+                  </option>
+                  <option value="8000">
+                    Express (24h)
+                  </option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Additional instructions
+              <textarea id="qNotes" placeholder="Deadline, colours, file details" rows="3"></textarea>
+            </label>
+            <div class="two">
+              <label>
+                Your name
+                <input autocomplete="name" id="qName" required="">
+              </label>
+              <label>
+                Email
+                <input autocomplete="email" id="qEmail" required="" type="email">
+              </label>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              Request This Quote
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- PORTFOLIO -->
+      <section class="section alt" id="portfolio">
+        <div class="wrap">
+          <h2>
+            Recent work
+          </h2>
+          <div aria-label="Filter portfolio" class="filters" data-target="portGrid" role="group">
+            <button class="chip active" data-f="all">
+              All
+            </button>
+            <button class="chip" data-f="Branding">
+              Branding
+            </button>
+            <button class="chip" data-f="Flyers">
+              Flyers
+            </button>
+            <button class="chip" data-f="Events">
+              Events
+            </button>
+            <button class="chip" data-f="Packaging">
+              Packaging
+            </button>
+            <button class="chip" data-f="Posters">
+              Posters
+            </button>
+            <button class="chip" data-f="Brochures">
+              Brochures
+            </button>
+            <button class="chip" data-f="Invitations">
+              Invitations
+            </button>
+          </div>
+          <div class="grid g3" id="portGrid">
+          </div>
+        </div>
+      </section>
+      <!-- WHY US -->
+      <section class="section">
+        <div class="wrap">
+          <h2>
+            Why choose us
+          </h2>
+          <div class="grid g4 reveal" id="whyGrid">
+          </div>
+        </div>
+      </section>
+      <!-- HOW IT WORKS -->
+      <section class="section alt">
+        <div class="wrap">
+          <h2>
+            How it works
+          </h2>
+          <ol class="steps reveal">
+            <li>
+              <b>
+                1
+              </b>
+              <h3>
+                Choose a Service
+              </h3>
+              <p>
+                Pick a product or build a quote.
+              </p>
+            </li>
+            <li>
+              <b>
+                2
+              </b>
+              <h3>
+                Submit Your Design
+              </h3>
+              <p>
+                Upload artwork or brief our designers.
+              </p>
+            </li>
+            <li>
+              <b>
+                3
+              </b>
+              <h3>
+                Approve the Proof
+              </h3>
+              <p>
+                Check colours and layout before printing.
+              </p>
+            </li>
+            <li>
+              <b>
+                4
+              </b>
+              <h3>
+                We Print & Deliver
+              </h3>
+              <p>
+                Finished, packed and on its way.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- REVIEWS -->
+      <section class="section">
+        <div class="wrap narrow">
+          <h2>
+            What customers say
+          </h2>
+          <div aria-roledescription="carousel" class="slider">
+            <div aria-live="polite" id="slides">
+            </div>
+            <div class="slider-ctl">
+              <button aria-label="Previous review" class="btn btn-ghost" id="prev">
+                ‹
+              </button>
+              <div id="dotsNav">
+              </div>
+              <button aria-label="Next review" class="btn btn-ghost" id="next">
+                ›
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="section alt" id="about">
+        <div class="wrap about">
+          <div>
+            <h2>
+              Printers who care about the details
+            </h2>
+            <p class="lead">
+              Inkwell Press started in 2011 with one press and a promise: what you approve is what you get. Today our team of 40 handles everything from a single wedding invitation to a 50,000-piece packaging run, with a real person answering every enquiry.
+            </p>
+          </div>
+          <div class="stats">
+            <div>
+              <strong data-count="18500">
+                0
+              </strong>
+              <span>
+                Projects completed
+              </span>
+            </div>
+            <div>
+              <strong data-count="6200">
+                0
+              </strong>
+              <span>
+                Happy customers
+              </span>
+            </div>
+            <div>
+              <strong data-count="15">
+                0
+              </strong>
+              <span>
+                Years of experience
+              </span>
+            </div>
+            <div>
+              <strong data-count="48" data-suffix="h">
+                0
+              </strong>
+              <span>
+                Average turnaround
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="wrap contact">
+          <div>
+            <h2>
+              Talk to us
+            </h2>
+            <ul class="info">
+              <li>
+                <b>
+                  Phone
+                </b>
+                <a href="tel:+2348000000000">
+                  +234 800 000 0000
+                </a>
+              </li>
+              <li>
+                <b>
+                  Email
+                </b>
+                <a href="mailto:hello@inkwellpress.example">
+                  hello@inkwellpress.example
+                </a>
+              </li>
+              <li>
+                <b>
+                  Address
+                </b>
+                12 Press Avenue, Ikeja, Lagos
+              </li>
+              <li>
+                <b>
+                  Hours
+                </b>
+                Mon-Fri 8am-6pm, Sat 9am-2pm
+              </li>
+              <li>
+                <b>
+                  Social
+                </b>
+                <a href="#">
+                  Instagram
+                </a>
+                <a href="#">
+                  Facebook
+                </a>
+                <a href="#">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+            <div aria-label="Map placeholder" class="map" role="img">
+              Map placeholder
+            </div>
+          </div>
+          <form class="card form" id="contactForm" novalidate="">
+            <label>
+              Name
+              <input autocomplete="name" id="cName" required="">
+            </label>
+            <label>
+              Email
+              <input autocomplete="email" id="cEmail" required="" type="email">
+            </label>
+            <label>
+              Message
+              <textarea id="cMsg" required="" rows="5"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">
+              Send Message
+            </button>
+            <a class="btn btn-ghost" href="#quote">
+              Request a Quote
+            </a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="foot">
+      <div class="wrap">
+        ©
+        <span id="yr">
+        </span>
+        Inkwell Press. Print with confidence.
+      </div>
+    </footer>
+    <!-- MODAL (service details / product quote) -->
+    <div class="modal" hidden="" id="modal">
+      <div aria-labelledby="mTitle" aria-modal="true" class="modal-box" role="dialog">
+        <button aria-label="Close" class="modal-x">
+          ×
+        </button>
+        <h3 id="mTitle">
+        </h3>
+        <p id="mBody">
+        </p>
+        <a class="btn btn-primary" href="#quote" id="mCta">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+    <div aria-live="polite" class="toasts" id="toasts" role="status">
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
